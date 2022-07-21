@@ -15,8 +15,10 @@ The fatal: The current branch master has no upstream branch error occurs when yo
 
 You can fix the issue by typing:
 
-git push -u origin master
+    git push -u origin master
+
 This will fix the error, but only for the current issue. The following is a permanent fix that will automatically create a remote branch:
 
-git config --global push.default current
+    git config --global push.default current
+
 The command above will fix the error and will always create a remote branch that tracks the local branch.
